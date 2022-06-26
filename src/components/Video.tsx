@@ -11,7 +11,7 @@ interface VideoProps {
 export function Video(props: VideoProps) {
   const { data } = useGetLessonBySlugQuery({
     variables: {
-      
+      slug: props.lessonSlug
     }
   })
 
